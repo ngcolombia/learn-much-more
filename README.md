@@ -18,4 +18,5 @@ Asegúrate que la instalación resultó bien corriendo los siguientes comandos:
 
 ## 3. Empecemos 🎉🎉
 
-- Esta vez no crearemos un proyecto desde cero, vamos a clonar el siguiento repositorio
+- Esta vez no crearemos un proyecto desde cero, vamos a clonar el siguiente repositorio:  
+`$ git clone https://github.com/angular-medellin/learn-much-more.git`
