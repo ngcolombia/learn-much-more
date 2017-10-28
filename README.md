@@ -16,7 +16,9 @@ Asegúrate que la instalación resultó bien corriendo los siguientes comandos:
 - `$ npm -v` -> versión 3.0.0 o superior
 - `$ ng -v`-> versión 1.0.0 o superior
 
-## 3. Empecemos 🎉🎉
+## 3. Empecemos! 🎉🎉
 
-- Esta vez no crearemos un proyecto desde cero, vamos a clonar el este repositorio:  
+- Esta vez no crearemos un proyecto desde cero, vamos a clonar este repositorio, para ello ejecuta el siguiente comando en tu terminal:
 `$ git clone https://github.com/angular-medellin/learn-much-more.git`
+- Luego de clonar el proyecto, debes ingresar a la carpeta contenedora `learn-much-more` ***(desde la terminal)*** y ejecutar el comando `npm install`, esto puede tardar unos minutos 🕑🕑
+- Al terminar el proceso de instalación de los paquetes, vamos a ejecutar el comando `ng s -o`, este comando nos ayudará a visualizar el proyecto en el navegador 🤓, si todo ha ido bien debes ver esta imagen de Chuck Norris 🤠 ![An image showing Chuck Norris's head wearing a hat](https://s33.postimg.org/glnoawxvz/chuck.png)
