@@ -1,0 +1,29 @@
+#content {
+  background-color: #59db57;
+  border-radius: 10px;
+  margin-top: 5%;
+  max-width: 800px;
+}
+
+#chuck { 
+  opacity: 0.5; 
+  filter: alpha(opacity=50); /* ie 8/9 */
+}
+
+blockquote {
+  border: 2px black dashed;
+  margin-top: 1em;
+  color: black;
+  opacity: 0.5;
+  border-radius: 12px;
+  font-family: serif;
+  text-align: center;
+}
+
+
+/* buttons end */
+
+#footer {
+  margin-top: 3em;
+  color: #333;  
+}
