@@ -17,6 +17,8 @@ export class AppComponent {
 
   getChuckNorrisJokes() {
     setInterval(() => {
+      this.httpClient.get('https://api.icndb.com/jokes/random')
+      .subscribe(response => this.joke = response['value'].joke);
     }, 5000)
   }
 }

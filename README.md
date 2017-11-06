@@ -1,24 +1,14 @@
 # Aprendamos HTTP en Angular
 
-## 1. Haciendo peticiones Http
+## 1. Últimos pasos para hacer peticiones Http 👣🏁
 
-Piensen por un momento en una aplicación que no tenga ningún tipo de interacción con internet 🤔....
-Resulta aburrido y hasta ilógico ¿verdad?. Por tal motivo es importante aprender a hacer peticiones HTTP hacia algunas API's o Endpoint's para darle dinamicidad a nuestras aplicaciones. Al finalizar este reto estarás en plena facultad para empezar a darle vida a tus aplicaciones web mediante las peticiones HTTP. 😀
-Para lograrlo debemos hacer uso de un módulo en Angular llamado `HttpClient`, que se encuentra disponible en el paquete 📦 `@angular/common/http`.
+Hasta el momento no hemos realizado ningún tipo de petición Http, pero solo basta con agregar unas pocas líneas de código, aunque no lo creas el trabajo duro ya lo has realizado. 💪💪 Bien por eso!!
+Ahora volvamos a nuesto `app.component.ts` y sigamos los pasos mostrados a continuación:
 
-- Para empezar, debemos importar este módulo en nuestra aplicación. Dirígete hacia el `app.module.ts` e importa correctamente el módulo `HttpClientModule`.
-- Ahora en el `app.component.ts` importamos `HttpClient` desde el mismo paquete.
-- Una vez importado para poder hacer uso de `HttpClient` en del componente, necesitamos inyectarlo (inject) en el constructor de la clase. Por Ejemplo
-```ts
-constructor(private httpClient: HttpClient) { }
-```
-- Crea una variable de tipo `string` para guardar el resultado enviado por la API. (puedes nombrarla como quieras).
-- Ahora crea una funcion que retorne `void` (vacío), en esta función alojaremos toda nuestra lógica(puedes nombrarla como quieras).
-- En la función previamente creada, vamos a asignar una valor a nuestra variable. Pero este valor debe ser asignado haciendo uso de la función `setInterval()` propia de JavaScript, este valor debe ser asignado 5 segundos despues de que la aplicación sea iniciada. ***Ayuda: Debes hacer uso del metodo ngOnInit() para hacer el llamado de tu función.***
-- Para verificar que la asignación del valor a nuestra variable se esta haciendo correctamente, debemos hacer 'binding' de esta variable en el `app.component.html`. Agrega el siguiente codigo en la etiqueta `div class="text-center"`:
-```ts
-<blockquote id="quote">
-      <h3>{{myVariable}}</h3>
-</blockquote>
-```
-Si vas a la aplicación y visualizas la variable después de 5 segundos, eso quiere decir que estás listo para pasar al [siguiente reto del tutorial](https://github.com/jevvilla/Workshop-ATesting/tree/2#your-first-unit-test-in-angular)
+- En la función donde estamos utilizando el `setInterval()` vamos a reemplazar la asignación de la varible por nuestra petición `Http` haciendo uso del `HttpClient`.
+- Ahora haciendo uso del metodo `get` de `HttpClient` vamos a hacer la petición Http pasando como parámetro esta ***url*** **https://api.icndb.com/jokes/random** en el metodo `get`. **(Nota: Esto nos devuelve un Observable)**
+- Para poder ejecutar este observable y obtener los datos debemos suscribirnos a este `observable` usando la notación `.subscribe()`, este método recibe como parámetro una otra función en la que recibes como parámetro el resultado de la petición a la API. (en este caso el resultado será un objeto tipo JSON).
+- Finalmente debemos asignar el resultado a nuestra variable para ser muestrada en la vista, para ello debemos acceder a la propedad **joke** del JSON resultante. 
+
+Hecho esto ya podrás ver los resultados reflejados en tu aplicación, cada 5 segundos la aplicación web hará una nueva petición al API, lo que nos permite ver un nuevo chiste cada dicho tiempo.
+**Hemos terminado!** 👏🏻👏🏻 ahora eres todo un rockstar haciendo peticiones `Http` usando `HttpClient` 🎉🎉
