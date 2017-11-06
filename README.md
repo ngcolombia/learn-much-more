@@ -22,4 +22,4 @@ Asegúrate que la instalación resultó bien corriendo los siguientes comandos:
 `$ git clone https://github.com/angular-medellin/learn-much-more.git`
 - Luego de clonar el proyecto, debes ingresar a la carpeta contenedora `learn-much-more` ***(desde la terminal)*** y ejecutar el comando `npm install`, esto puede tardar unos minutos 🕑🕑
 - Al terminar el proceso de instalación de los paquetes, vamos a ejecutar el comando `ng s -o`, este comando nos ayudará a visualizar el proyecto en el navegador 🤓, si todo ha ido bien debes ver una imagen de Chuck Norris 🤠
-- Si no ves la imagen de Chuck Norris 🤠 levanta tu mano y pide ayuda, pero si la estas viendo estas listo para pasar al [siguiente reto del tutorial](https://github.com/jevvilla/Workshop-ATesting/tree/2#your-first-unit-test-in-angular).
+- Si no ves la imagen de Chuck Norris 🤠 levanta tu mano y pide ayuda, pero si la estas viendo estas listo para pasar al [siguiente reto >>>](https://github.com/angular-medellin/learn-much-more/tree/1).
