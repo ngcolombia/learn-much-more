@@ -21,4 +21,4 @@ constructor(private httpClient: HttpClient) { }
       <h3>{{myVariable}}</h3>
 </blockquote>
 ```
-Si vas a la aplicación y visualizas la variable después de 5 segundos, eso quiere decir que estás listo para pasar al [siguiente reto del tutorial](https://github.com/jevvilla/Workshop-ATesting/tree/2#your-first-unit-test-in-angular)
+Si vas a la aplicación y visualizas la variable después de 5 segundos, eso quiere decir que estás listo para pasar al [siguiente reto >>>](https://github.com/angular-medellin/learn-much-more/tree/2#aprendamos-http-en-angular)
