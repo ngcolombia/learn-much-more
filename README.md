@@ -2,7 +2,7 @@
 
 ## 1. Haciendo peticiones Http
 
-Pensemos por un momento en una aplicación que no tenga ningún tipo de interacción con internet 🤔....
+Piensa por un momento en una aplicación que no tenga ningún tipo de interacción con internet 🤔....
 Resulta aburrido y hasta ilógico ¿verdad?. Por tal motivo es importante aprender a hacer peticiones HTTP hacia algunas API's o Endpoint's para darle dinamicidad a nuestras aplicaciones. Al finalizar este reto estarás en plena facultad para empezar a darle vida a tus aplicaciones web mediante las peticiones HTTP. 😀
 Para lograrlo debemos hacer uso de un módulo en Angular llamado `HttpClient`, que se encuentra disponible en el paquete 📦 `@angular/common/http`.
 
