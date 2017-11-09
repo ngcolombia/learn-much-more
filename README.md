@@ -14,8 +14,8 @@ constructor(private httpClient: HttpClient) { }
 ```
 - Crea una variable de tipo `string` para guardar el resultado enviado por la API. (puedes nombrarla como quieras).
 - Ahora crea una funcion que retorne `void` (vacío), en esta función alojaremos toda nuestra lógica(puedes nombrarla como quieras).
-- En la función previamente creada, vamos a asignar una valor a nuestra variable. Pero este valor debe ser asignado haciendo uso de la función `setInterval()` propia de JavaScript, este valor debe ser asignado 5 segundos despues de que la aplicación sea iniciada. ***Ayuda: Debes hacer uso del metodo ngOnInit() para hacer el llamado de tu función.***
-- Para verificar que la asignación del valor a nuestra variable se esta haciendo correctamente, debemos hacer 'binding' de esta variable en el `app.component.html`. Agrega el siguiente codigo en la etiqueta `div class="text-center"`:
+- En la función previamente creada, vamos a asignar un valor a nuestra variable. Pero este valor debe ser asignado haciendo uso de la función `setInterval()` propia de JavaScript, este valor debe ser asignado 5 segundos despues de que la aplicación sea iniciada. ***Ayuda: Debes hacer uso del metodo ngOnInit() para hacer el llamado de tu función.***
+- Para verificar que la asignación del valor a nuestra variable se está haciendo correctamente, debemos hacer 'binding' de esta variable en el `app.component.html`. Agrega el siguiente código en la etiqueta `div class="text-center"`:
 ```ts
 <blockquote id="quote">
       <h3>{{myVariable}}</h3>
